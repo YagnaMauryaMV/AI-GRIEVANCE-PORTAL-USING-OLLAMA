@@ -1,0 +1,228 @@
+/* True centering */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#e4edff, #f9fcff);
+  position: relative;
+}
+
+/* Top-right language dropdown */
+.login-lang {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 14px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Emblem + title */
+.login-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.login-logo {
+  height: 90px;
+  margin-bottom: 4px;
+}
+
+.portal-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3d91;
+}
+
+/* Card */
+.login-card {
+  background: white;
+  padding: 28px;
+  border-radius: 14px;
+  width: 100%;
+  box-shadow: 0px 12px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #d7e6ff;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 16px;
+  color: #0b3d91;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b4c8ed;
+  border-radius: 8px;
+  margin-bottom: 14px;
+  font-size: 15px;
+}
+
+.captcha-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.captcha-box {
+  width: 120px;
+  height: 48px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh-btn {
+  width: 48px;
+  height: 48px;
+  background: #0b57d0;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Buttons FIXED — text now visible */
+.btn-primary {
+  width: 100%;
+  background: #0b3d91;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 14px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 100%;
+  background: #eaf1ff;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  color: #0b3d91;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* OTP */
+.otp-section {
+  text-align: center;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 14px;
+  font-size: 22px;
+  text-align: center;
+  border: 2px solid #b4c8ed;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.otp-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #0b3d91;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.message {
+  background: #f1f5ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+  color: #0b3d91;
+}
+.otp-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.otp-success {
+  background: #e6ffe6;
+  color: #006600;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.otp-title {
+  color: #003c8f;
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.dev-otp {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.otp-input {
+  font-size: 20px;
+  padding: 12px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto 20px;
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.otp-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.btn-wide {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Back button same as blue button */
+.btn-backmatch {
+  background: #0a4db3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-backmatch:hover {
+  background: #083f8f;
+}
+.portal-title {
+  margin-top: 14px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: #0a58ca; /* Official blue */
+}
+.login-portal-title {
+  margin-top: 10px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0a58ca;   /* same blue as your buttons */
+  text-align: center;
+}

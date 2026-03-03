@@ -1,0 +1,13 @@
+🟢 Starting AI Grievance Portal backend...
+🔧 Loading ./routes/auth -> E:\ai_grievance_portal_with_ollama\backend\routes\auth
+✅ Loaded route: ./routes/auth
+🔧 Loading ./routes/admin -> E:\ai_grievance_portal_with_ollama\backend\routes\admin
+✅ Loaded route: ./routes/admin
+🔧 Loading ./routes/complaints -> E:\ai_grievance_portal_with_ollama\backend\routes\complaints
+✅ Loaded route: ./routes/complaints
+🔧 Loading ./routes/ai -> E:\ai_grievance_portal_with_ollama\backend\routes\ai
+✅ Loaded route: ./routes/ai
+🔧 Loading ./routes/sms.js -> E:\ai_grievance_portal_with_ollama\backend\routes\sms.js
+✅ Loaded route: ./routes/sms.js
+🚀 Backend is live at http://localhost:5000
+✅ MongoDB connected successfully

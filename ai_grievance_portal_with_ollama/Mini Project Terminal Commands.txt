@@ -1,0 +1,69 @@
+Terminal A 
+ollama run llama3.2
+
+Terminal B
+cd python_ai_backend
+uvicorn app.main:app --reload --port 8000
+
+Terminal C
+cd backend
+npm run dev
+
+Terminal D
+cd frontend
+npm run dev
+
+🚀 2️⃣ START OLLAMA + MODEL
+Open Terminal A and run:
+ollama pull llama3.2
+ollama serve
+Wait until it shows:
+Listening on 127.0.0.1:11434
+Now start the model API server on port 8001:
+ollama run llama3.2
+KEEP THIS RUNNING
+
+🐍 3️⃣ START PYTHON BACKEND (AI SERVICE)
+Open Terminal B
+Go inside the Python backend folder:
+cd python_ai_backend
+Create virtual environment:
+python -m venv venv
+Activate:
+Windows
+venv\Scripts\activate
+Install packages:
+pip install -r requirements.txt
+Run FastAPI on port 8000:
+uvicorn app.main:app --reload --port 8000
+If successful → you should see:
+INFO:     Uvicorn running on http://127.0.0.1:8000
+
+🟢 4️⃣ START NODE BACKEND
+Open Terminal C
+Go to backend folder:
+cd backend
+Install dependencies (first time only):
+npm install
+Make sure .env has:
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/ai_grievance_db
+JWT_SECRET=supersecret_dev_key
+PY_AI_BASE=http://127.0.0.1:8000
+Start backend:
+npm run dev
+If successful → you will see:
+Server running on http://localhost:5000
+Connected to MongoDB
+
+🎨 5️⃣ START FRONTEND
+Open Terminal D
+Go to frontend folder:
+cd frontend
+Install dependencies:
+npm install
+Start dev server:
+npm run dev
+It will show a link like:
+http://localhost:5173/
+Open it in Chrome or Edge.

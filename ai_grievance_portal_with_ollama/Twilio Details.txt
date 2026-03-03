@@ -1,0 +1,11 @@
+Account 1 - mauryayagna95@gmail.com
+Twilio Recovery Code - U47MH5DBNGH7WYHCQDRV4JUT
+Account SID - ACd5b5cb557dc52aacd32095399dad6a1c
+Service SID - VA8ca2925d3a2f21792aa35d9ecb102db8
+Auth Token - 880f21a10ac1fa001e8b8bd9511c298f
+
+Account 2 - onlyforstudies50@gmail.com
+Twilio Recovery Code - T3E8GJ5FZ87U3RABBL6FWDUQ
+Account SID - ACcebb50c61bf92d809285a5e877846cec
+Auth Token - b0d49248910a63462fb3741254d2eabb
+Verify Service ID - VA93fb7892eef4c75dfda84a11d2afb187

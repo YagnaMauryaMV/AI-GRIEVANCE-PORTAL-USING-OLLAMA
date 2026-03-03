@@ -1,0 +1,12 @@
+/* src/pages/Dashboard.css */
+.dash-root { display:flex; min-height:100vh; }
+.dash-sidebar { width: 260px; background:#0f1720; color:#fff; padding: 24px; }
+.dash-sidebar .brand { font-weight:700; margin-bottom:16px; }
+.dash-sidebar ul { list-style:none; padding:0; }
+.dash-sidebar li { margin: 12px 0; }
+.dash-sidebar a { color:#d1d5db; text-decoration:none; }
+.dash-sidebar a.active { color: #fff; font-weight:600; }
+.dash-main { flex:1; padding: 28px; background: #f5f7fb; min-height:100vh; }
+.complaint-card { background: #fff; padding: 12px; border-radius:8px; margin-bottom:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.card { background:#fff; padding:16px; border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); }
+.error { color:#b91c1c; margin-top:8px; }

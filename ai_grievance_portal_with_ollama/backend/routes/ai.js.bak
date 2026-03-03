@@ -1,0 +1,36 @@
+// routes/ai.js
+const express = require("express");
+const router = express.Router();
+const axios = require("axios");
+
+// Python AI service URL
+const PY_AI_URL = "http://127.0.0.1:8001/chat";
+
+router.post("/chat", async (req, res) => {
+  try {
+    const { message, user } = req.body;
+
+    const response = await axios.post(PY_AI_URL, {
+      message,
+      ticket_id: req.body.ticket_id || null
+    });
+
+    return res.json({
+      success: true,
+      reply: response.data.reply,
+      ticket_id: response.data.ticket_id,
+      category: response.data.category,
+      sentiment: response.data.sentiment,
+      escalate: response.data.escalate
+    });
+
+  } catch (err) {
+    console.error("AI Chat Error:", err);
+    return res.json({
+      success: false,
+      reply: "⚠ Internal server error. AI service not responding."
+    });
+  }
+});
+
+module.exports = router;

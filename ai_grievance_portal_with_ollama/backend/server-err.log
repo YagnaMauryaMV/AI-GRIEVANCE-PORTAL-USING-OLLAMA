@@ -1,0 +1,10 @@
+Dev mode: no JWT provided to /api/ai/analyze-and-create — using fallback user data.
+Failed to send SMS acknowledgement: Error: Invalid 'To' Phone Number: 999999XXXX
+    at success (E:\ai_grievance_portal_with_ollama\backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async E:\ai_grievance_portal_with_ollama\backend\routes\ai.js:210:9
+Dev mode: no JWT provided to /api/ai/analyze-and-create — using fallback user data.
+Failed to send SMS acknowledgement: Error: Invalid 'To' Phone Number: 999999XXXX
+    at success (E:\ai_grievance_portal_with_ollama\backend\node_modules\twilio\lib\base\Version.js:79:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async E:\ai_grievance_portal_with_ollama\backend\routes\ai.js:210:9

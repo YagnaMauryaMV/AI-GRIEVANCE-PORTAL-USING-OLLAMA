@@ -1,0 +1,12 @@
+fastapi>=0.115.0
+uvicorn[standard]
+sqlalchemy
+pydantic>=2.5.0
+pydantic-settings>=2.2.0
+python-dotenv
+passlib[bcrypt]
+python-multipart
+httpx
+apscheduler
+psycopg2-binary
+twilio

@@ -1,0 +1,142 @@
+/* Layout container used inside ProfilePage */
+.dash-shell {
+  display: flex;
+  margin-top: 20px;
+}
+
+/* Collapsible left sidebar */
+.left-sidebar {
+  background: #062b63;
+  color: #d8e2ff;
+  width: 260px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding-top: 18px;
+  border-radius: 12px 0 0 12px;
+}
+.left-sidebar.collapsed {
+  width: 70px;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  padding: 0 12px 10px;
+  gap: 10px;
+}
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+.portal-title-small {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Menu */
+.sidebar-menu {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+/* Group title like e-Aasthi */
+.menu-group-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s;
+}
+.menu-group-title:hover {
+  background: #003b73;
+}
+.dot {
+  margin-right: 10px;
+}
+.arrow {
+  transition: 0.2s;
+}
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+/* Submenu buttons */
+.submenu {
+  display: flex;
+  flex-direction: column;
+}
+.submenu-link {
+  padding: 10px 40px;
+  font-size: 14px;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: #cfe0ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.submenu-link:hover,
+.submenu-link.active {
+  background: #0051a8;
+  color: #fff;
+}
+
+/* Top-level buttons */
+.main-link {
+  padding: 12px 20px;
+  text-align: left;
+  border: none;
+  background: transparent;
+  color: #d8e2ff;
+  cursor: pointer;
+}
+.main-link:hover,
+.main-link.active {
+  background: #003b73;
+}
+
+/* Logout button at bottom */
+.sidebar-logout {
+  margin: 12px;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #e63946;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sidebar-logout:hover {
+  background: #d62828;
+}
+
+/* Main content on right */
+.dash-main {
+  flex: 1;
+  padding: 0 0 0 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dash-shell {
+    flex-direction: column;
+  }
+  .left-sidebar {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+  }
+  .dash-main {
+    padding: 20px 0 0 0;
+  }
+}

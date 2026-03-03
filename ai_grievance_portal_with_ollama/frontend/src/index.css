@@ -1,0 +1,45 @@
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0b5ed7;
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 3px solid #063970;
+}
+
+.portal-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.lang-select {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.lang-dropdown {
+  padding: 5px 8px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.lang-dropdown:focus {
+  outline: 2px solid #ffffff;
+}
+.otp-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.otp-section input {
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  width: 150px;
+}
